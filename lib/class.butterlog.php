@@ -35,7 +35,6 @@ class ButterLog {
 
   static function log($severity, $msg, $object=false) {
     if ($severity >= self::$lvl) {
-      // the following costs about 6ms on a amd athlon 4050e 2.1GHz
       if (PHP_VERSION_ID >= 54000)
         $backtrace = debug_backtrace(false, 2); // about 1% faster
       else

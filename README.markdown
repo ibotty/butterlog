@@ -8,7 +8,7 @@ In the current incarnation it only logs to the errorlog. In the future it will m
 Example
 ---------
 
-In the following example, the logging function will capture the context: the calling function, the filename and the linenumber. This is surprisingly performant and does only add 6µs (±0.1) to the calling time (on my amd athlon 4050e on 2.1GHz). 
+In the following example, the logging function will capture the context: the calling function, the filename and the linenumber. This is surprisingly performant and does only add fractions of a microsecond to the calling time (on my amd athlon 4050e on 2.1GHz). 
 
 ```php
 <?php
